@@ -1,0 +1,15 @@
+{
+  "name": "saturday",
+  "version": "0.1.0",
+  "description": "simplest trading portfolio",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tan Le",
+  "license": "MIT"
+}

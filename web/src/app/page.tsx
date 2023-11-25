@@ -34,7 +34,8 @@ export default function Home() {
 					transition={{ delay: 0.5, duration: 0.5 }}
 				>
 					<Typography variant="h4" textAlign={'center'} mb={8}>
-						An AI-power, simplest, efficient trading portfolio
+						An AI-powered, simplest, efficient tools for building trading
+						portfolio
 					</Typography>
 					<Button variant="outlined" size="large">
 						Start now

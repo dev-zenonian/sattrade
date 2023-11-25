@@ -12,8 +12,8 @@ export default {
 		app.stack(function Site({ stack }) {
 			const site = new NextjsSite(stack, 'site', {
 				customDomain: {
-					domainName: 'sattrade.com',
-					hostedZone: 'sattrade.com',
+					domainName: 'sattrade.xyz',
+					hostedZone: 'sattrade.xyz',
 				},
 			});
 

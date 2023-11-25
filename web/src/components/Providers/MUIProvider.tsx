@@ -1,7 +1,7 @@
 'use client';
 import type { FC } from 'react';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { deepPurple } from '@mui/material/colors';
+import { blue } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 import { Montserrat } from 'next/font/google';
 
@@ -28,7 +28,7 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 const theme = createTheme({
 	palette: {
 		primary: {
-			main: deepPurple[900],
+			main: blue[700],
 		},
 		mode: 'dark',
 	},

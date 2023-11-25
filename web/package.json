@@ -1,5 +1,5 @@
 {
-  "name": "saturday-trade",
+  "name": "@sattrade/web",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
@@ -8,9 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "deploy": "sst deploy"
   },
   "dependencies": {
+    "eslint-config-next": "^14.0.3",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"
@@ -19,14 +21,13 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@walless/eslint-config": "^0.0.7",
     "autoprefixer": "^10.0.1",
     "aws-cdk-lib": "2.110.1",
     "constructs": "10.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.0.3",
-    "postcss": "^8",
+    "prettier": "^3.1.0",
     "sst": "^2.36.6",
-    "tailwindcss": "^3.3.0",
     "typescript": "^5"
   },
   "packageManager": "yarn@4.0.2"

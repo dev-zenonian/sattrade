@@ -1,3 +1,4 @@
+import { MUIProvider } from 'components/Providers';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
@@ -17,7 +18,12 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={montserrat.className}>{children}</body>
+			<head>
+				<meta name="viewport" content="initial-scale=1, width=device-width" />
+			</head>
+			<body className={montserrat.className}>
+				<MUIProvider>{children}</MUIProvider>
+			</body>
 		</html>
 	);
 }

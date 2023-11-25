@@ -36,7 +36,7 @@ export default function Home() {
 					<Typography variant="h4" textAlign={'center'} mb={8}>
 						An AI-power, simplest, efficient trading portfolio
 					</Typography>
-					<Button variant="contained" size="large">
+					<Button variant="outlined" size="large">
 						Start now
 					</Button>
 				</Box>

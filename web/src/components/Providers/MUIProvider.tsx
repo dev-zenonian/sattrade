@@ -31,6 +31,9 @@ const theme = createTheme({
 			main: blue[700],
 		},
 		mode: 'dark',
+		background: {
+			default: '#101418',
+		},
 	},
 	typography: {
 		fontFamily: montserrat.style.fontFamily,

@@ -3,6 +3,7 @@ import type { FC } from 'react';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
+import { Montserrat } from 'next/font/google';
 
 import NextAppDirEmotionCacheProvider from './EmotionCache';
 
@@ -22,12 +23,17 @@ export const MUIProvider: FC<Props> = ({ children }) => {
 	);
 };
 
+const montserrat = Montserrat({ subsets: ['latin'] });
+
 const theme = createTheme({
 	palette: {
 		primary: {
 			main: deepPurple[900],
 		},
 		mode: 'dark',
+	},
+	typography: {
+		fontFamily: montserrat.style.fontFamily,
 	},
 });
 

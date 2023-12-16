@@ -1,6 +1,7 @@
 package query
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -9,6 +10,7 @@ import (
 )
 
 func GetCryptocurrenciesLatestListings(client http.Client, apiKey string) ([]byte, error) {
+	fmt.Println("start querying latest sting...")
 	req, err := http.NewRequest("GET", "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest", nil)
 	if err != nil {
 		log.Print(err)

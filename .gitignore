@@ -3,3 +3,8 @@
 
 node_modules
 .yarn
+
+**.env
+
+coin.json
+meta.json

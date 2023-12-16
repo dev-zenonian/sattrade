@@ -1,11 +1,12 @@
 import { Container } from '@mui/material';
 
-import { Header } from './components';
+import { Header, MainChart } from './components';
 
 const Dashboard = () => {
 	return (
 		<Container maxWidth={false}>
 			<Header />
+			<MainChart />
 		</Container>
 	);
 };

@@ -1,6 +1,7 @@
 'use client';
 import { Box, Button, Container, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -37,9 +38,11 @@ export default function Home() {
 						An AI-powered, simplest, efficient tools for building trading
 						portfolio
 					</Typography>
-					<Button variant="outlined" size="large">
-						Start now
-					</Button>
+					<Link href={'/dashboard'}>
+						<Button variant="outlined" size="large">
+							Start now
+						</Button>
+					</Link>
 				</Box>
 			</Box>
 		</Container>

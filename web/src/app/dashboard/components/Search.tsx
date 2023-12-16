@@ -1,6 +1,6 @@
 import { TextField } from '@mui/material';
 
-const Search = () => {
+export const Search = () => {
 	return (
 		<TextField
 			label="Search"

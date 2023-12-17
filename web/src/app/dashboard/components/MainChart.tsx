@@ -37,5 +37,3 @@ export const MainChart = () => {
 		></Chart>
 	);
 };
-
-export default MainChart;

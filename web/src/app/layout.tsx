@@ -1,6 +1,8 @@
 import { MUIProvider } from 'components/Providers';
 import type { Metadata } from 'next';
 
+import { DynamicSolanaProvider } from './components/SolanaProvider';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -20,7 +22,9 @@ export default function RootLayout({
 				<meta name="viewport" content="initial-scale=1, width=device-width" />
 			</head>
 			<body>
-				<MUIProvider>{children}</MUIProvider>
+				<MUIProvider>
+					<DynamicSolanaProvider>{children}</DynamicSolanaProvider>
+				</MUIProvider>
 			</body>
 		</html>
 	);
